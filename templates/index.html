@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Game</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chessboard-1.0.0.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/chess.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chessboard-1.0.0.js') }}">
+    <script src="{{ url_for('static', filename='js/chart.js') }}"></script>
+
+ 
+</head>
+<body>
+    <h1 class="page-title">Chess AI Arena</h1>
+    <div class="container">
+        <div class="game-area">
+          <div id="board" class="board"></div>
+          <div class="chart-container">
+            <canvas id="evalChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+      
+        <div class="control-panel">
+
+            <div>
+                <label for="modelSelectorWhite">White Model:</label>
+                <select id="modelSelectorWhite"></select>
+            </div>
+
+            <div>
+                <label for="modelSelectorBlack">Black Model:</label>
+                <select id="modelSelectorBlack"></select>
+            </div>
+            <div class="button-row">
+                <button id="resetBtn">🔄 Restart Game</button>
+                <button id="startAI">🤖 Start AI Game</button>
+            </div>
+        </div>
+      
+        <div id="status">Game status will appear here...</div>
+      </div>
+
+
+
+      <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+</html>

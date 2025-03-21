@@ -1,0 +1,24 @@
+# Ignore Python cache
+__pycache__/
+**/__pycache__/
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment folders (optional)
+venv/
+env/
+
+# Ignore testing folder completely
+testing/
+
+
+# IDE-specific (optional, PyCharm)
+.idea/
+*.iml
+
+# Jupyter Notebook checkpoints (if used)
+.ipynb_checkpoints/
+

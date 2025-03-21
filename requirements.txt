@@ -1,0 +1,12 @@
+tensorflow>=2.11.0
+numpy
+matplotlib
+flask
+python-chess
+tensorflow-model-optimization
+onnx
+onnxruntime
+tf2onnx
+chart.js  # used in frontend, installed via CDN or npm
+chessboard.js  # used in frontend, installed via CDN or npm
+chess.js  # used in frontend, installed via CDN or npm
